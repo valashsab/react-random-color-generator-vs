@@ -2,8 +2,8 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  const newColor = randomColor();
-  const [color, setColor] = useState(newColor);
+  const initialColor = randomColor();
+  const [color, setColor] = useState(initialColor);
   return (
     <>
       <div
@@ -20,8 +20,8 @@ export default function App() {
       </div>
       <button
         onClick={() => {
-          const generateColor = randomColor();
-          setColor(generateColor);
+          const newColor = randomColor();
+          setColor(newColor);
         }}
         style={{
           border: '1px solid black',
