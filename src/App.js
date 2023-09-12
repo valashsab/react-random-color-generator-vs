@@ -12,6 +12,7 @@ export default function App() {
           padding: '10px',
           border: '1px solid black',
           borderRadius: '10px',
+          position: 'realtive',
           margin: '10px',
           backgroundColor: color,
         }}
@@ -25,8 +26,6 @@ export default function App() {
         }}
         style={{
           fontSize: '15px',
-          border: '1px solid black',
-          margin: '10px',
           padding: '10px',
           border: '1px solid black',
           borderRadius: '10px',
