@@ -2,9 +2,13 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  const initialColor = randomColor();
+  const initialColor = randomColor({
+    luminosity: 'random',
+    hue: 'random',
+  });
   const [color, setColor] = useState(initialColor);
-
+  const generateHue = initialColor.hue;
+  const [hue, setHue] = useState(generateHue);
   return (
     <>
       <div
@@ -31,14 +35,9 @@ export default function App() {
           margin: '10px',
           backgroundColor: '#ffffff',
         }}
-        value={color}
-        oneChange={(event) => {
-          setColor(event.currentTarget.value);
-
-          if (inputName === color) {
-            // what is the indicator for =?
-            const requestedColor = setColor(requestedColor);
-          }
+        value={hue}
+        onChange={(event) => {
+          setHue(event.currentTarget.value);
         }}
       />
       <br />
