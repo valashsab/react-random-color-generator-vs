@@ -9,10 +9,10 @@ export default function App() {
       <div
         style={{
           fontSize: '35px',
-          display: 'flex',
-          alignItems: 'center',
+          padding: '10px',
           border: '1px solid black',
-          margin: '50px',
+          borderRadius: '10px',
+          margin: '10px',
           backgroundColor: color,
         }}
       >
@@ -24,8 +24,14 @@ export default function App() {
           setColor(newColor);
         }}
         style={{
+          fontSize: '15px',
           border: '1px solid black',
-          margin: '50px',
+          margin: '10px',
+          padding: '10px',
+          border: '1px solid black',
+          borderRadius: '10px',
+          margin: '10px',
+          backgroundColor: '#ffffff',
         }}
       >
         Generate
