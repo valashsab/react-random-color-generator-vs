@@ -4,7 +4,6 @@ Design and develop a random color generator web application using React. This ap
 
 - [x] Once a color is generated, update the background color of a div which contains the exact text `Generated Color: <background color hex code>` (the background color and the hex code must match)
 
-
 Our suggestions for breaking down the task into TODOs:
 
 - If you need a reminder of how we did this last week, watch the video showing breaking down tasks
@@ -18,7 +17,7 @@ Our suggestions for breaking down the task into TODOs:
 ## Stretch Goals
 
 - Ask for a hue
-- Ask for a lightness
+- Ask for a lightness/luminosity
 - Transition smoothly between the colors as they change
 - Use a CSS-in-JS library for all styling (eg. Emotion or Styled Components)
 - Ask for a size for the color box and generate a box of that size
@@ -26,8 +25,8 @@ Our suggestions for breaking down the task into TODOs:
 
 ## Acceptance Criteria
 
-- [ ] Preflight runs through without errors in your project
-  - [ ] Link in your GitHub repo's About section: Netlify deployed website
+- [x] Preflight runs through without errors in your project
+  - [x] Link in your GitHub repo's About section: Netlify deployed website
 - [ ] Project has been [imported into CodeSandbox](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#codesandbox) and a comment has been added below with the sandbox URL
 - [ ] [Drone bot](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
 - [ ] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-git-github/#writing-commit-messages))
