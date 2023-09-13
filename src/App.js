@@ -1,5 +1,5 @@
 import randomColor from 'randomcolor';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
   const initialColor = randomColor({
@@ -11,15 +11,32 @@ export default function App() {
   const [hue, setHue] = useState(generateHue);
   return (
     <>
+      <h1
+        style={{
+          fontFamily: 'Monospace',
+          fontSize: '30px',
+          marginLeft: '10px',
+          marginBottom: '10px',
+          textTransform: 'uppercase',
+        }}
+      >
+        Random Color Generator
+      </h1>
+      <br />
       <div
         style={{
-          font: 'Courier New',
-          fontSize: '35px',
-          padding: '10px',
+          fontFamily: 'Monospace',
+          fontSize: '20px',
+          width: '150px',
+          height: '150px',
+          // paddingTop: '100%',
+          // paddingLeft: '10px',
+          padding: '40px',
           border: '1px solid black',
           borderRadius: '10px',
           position: 'realtive',
           margin: '10px',
+          textAlign: 'center',
           backgroundColor: `${color}`,
         }}
       >
@@ -27,7 +44,7 @@ export default function App() {
       </div>
       <input
         style={{
-          font: 'Courier New',
+          fontFamily: 'Monospace',
           fontSize: '15px',
           padding: '10px',
           border: '1px solid black',
@@ -47,8 +64,8 @@ export default function App() {
           setColor(newColor);
         }}
         style={{
-          font: 'courier new',
-          fontSize: '1=px',
+          fontFamily: 'Monospace',
+          fontSize: '15px',
           padding: '10px',
           border: '1px solid black',
           borderRadius: '10px',
