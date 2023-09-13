@@ -14,7 +14,8 @@ export default function App() {
       <h1
         style={{
           fontFamily: 'Monospace',
-          fontSize: '30px',
+          fontStretch: 'ultra-expanded',
+          fontSize: '2rem',
           marginLeft: '10px',
           marginBottom: '10px',
           textTransform: 'uppercase',
@@ -26,17 +27,17 @@ export default function App() {
       <div
         style={{
           fontFamily: 'Monospace',
-          fontSize: '20px',
+          fontSize: '1.5rem',
           width: '150px',
           height: '150px',
-          // paddingTop: '100%',
-          // paddingLeft: '10px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
           padding: '40px',
           border: '1px solid black',
           borderRadius: '10px',
-          position: 'realtive',
           margin: '10px',
-          textAlign: 'center',
           backgroundColor: `${color}`,
         }}
       >
@@ -45,7 +46,7 @@ export default function App() {
       <input
         style={{
           fontFamily: 'Monospace',
-          fontSize: '15px',
+          fontSize: '1.25rem',
           padding: '10px',
           border: '1px solid black',
           borderRadius: '10px',
@@ -65,12 +66,12 @@ export default function App() {
         }}
         style={{
           fontFamily: 'Monospace',
-          fontSize: '15px',
+          fontSize: '1rem',
           padding: '10px',
-          border: '1px solid black',
-          borderRadius: '10px',
+          border: '1px outset black',
+          borderRadius: '35% 5%',
           margin: '10px',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#D8D4CA',
         }}
       >
         Generate
