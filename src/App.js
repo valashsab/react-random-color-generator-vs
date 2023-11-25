@@ -7,8 +7,7 @@ export default function App() {
     hue: 'random',
   });
   const [color, setColor] = useState(initialColor);
-  // const generateHue = initialColor.hue;
-  // const [hue, setHue] = useState(generateHue);
+
   return (
     <>
       <h1
@@ -37,29 +36,13 @@ export default function App() {
           border: '1px solid black',
           borderRadius: '10px',
           margin: '10px',
-          backgroundColor: `${color}`,
+          // backgroundColor: `${color}`,
+          backgroundColor: color,
         }}
       >
         Generated Color: {color}
       </div>
-      {/* <input
-        style={{
-          fontFamily: 'Monospace',
-          fontSize: '1.25rem',
-          padding: '10px',
-          border: '1px solid black',
-          borderRadius: '10px',
-          margin: '10px',
-          backgroundColor: '#ffffff',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-        value={hue}
-        onChange={(event) => {
-          setHue(event.currentTarget.value);
-        }}
-      /> */}
+
       <br />
       <button
         onClick={() => {

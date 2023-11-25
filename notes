@@ -27,9 +27,9 @@ Our suggestions for breaking down the task into TODOs:
 
 - [x] Preflight runs through without errors in your project
   - [x] Link in your GitHub repo's About section: Netlify deployed website
-- [ ] Project has been [imported into CodeSandbox](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#codesandbox) and a comment has been added below with the sandbox URL
-- [ ] [Drone bot](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
-- [ ] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-git-github/#writing-commit-messages))
+- [x] Project has been [imported into CodeSandbox](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#codesandbox) and a comment has been added below with the sandbox URL
+- [x] [Drone bot](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
+- [x] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-git-github/#writing-commit-messages))
 
 ---
 
@@ -56,3 +56,44 @@ chalk.hex(color).bold(`###############################
 ###############################
 ###############################`),
 );
+
+<!--
+FILE:
+.eslintrc.cjs:
+
+/** @type {import('@typescript-eslint/utils').TSESLint.Linter.Config} */
+const config = {
+  extends: ['upleveled'],
+};
+
+module.exports = config; -->
+
+<!-- FILE:
+.eslintignore:
+
+# Changed from /build to /dist because this is default for
+
+# Netlify when deploying an app using `@upleveled/react-scripts`
+
+# Ref: https://github.com/upleveled/create-react-app/commit/ab165a178994751e837d2835b2a4dbcc48f6f709
+
+#
+
+# TODO: Remove `dist` and this block altogether when we have
+
+# moved the full curriculum from create-react-app to Next.js
+
+dist
+
+# Next.js build folder
+
+.next -->
+
+<!-- FILE
+stylelint.config.mjs:
+/\*_ @type {import('stylelint').Config} _/
+const config = {
+extends: ['stylelint-config-upleveled'],
+};
+
+export default config; -->
